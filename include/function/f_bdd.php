@@ -5,7 +5,7 @@ $host = 'hen-db-geststage.mysql.database.azure.com';
 $username = 'henry_admin';
 $password = 'Simplon2024@';
 $database = 'bdd_geststages';
-$certificate = "/geststage/include/certificates/DigiCertGlobalRootCA.crt.pem";
+$certificate = __DIR__ . "/certificates/DigiCertGlobalRootCA.crt.pem";
 
 // Afficher le chemin du certificat pour vérification
 echo "Chemin du certificat : " . $certificate . "\n";
