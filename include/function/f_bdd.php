@@ -4,7 +4,7 @@
 $host = 'hen-bantko.mysql.database.azure.com';
 $username = 'henry_admin';
 $password = 'Simplon2024@';
-$database = 'bdd_geststage';
+$database = 'bdd_geststages';
 
 
 function connexionBDD()
