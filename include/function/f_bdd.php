@@ -11,12 +11,12 @@ $certificate = __DIR__ . "/../certificates/DigiCertGlobalRootCA.crt.pem";
 echo "Chemin du certificat : " . $certificate . "\n";
 
 // Lire et afficher le contenu du certificat
-if (file_exists($certificate)) {
+/* if (file_exists($certificate)) {
     $cert_content = file_get_contents($certificate);
     echo "Contenu du certificat :\n" . $cert_content;
 } else {
     echo "Le certificat n'existe pas au chemin spécifié.";
-}
+} */
 
 function connexionBDD($host, $username, $password, $database, $certificate)
 {
