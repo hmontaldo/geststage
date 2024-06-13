@@ -8,7 +8,7 @@ $database = 'bdd_geststages';
 $certificate = __DIR__ . "/../certificates/DigiCertGlobalRootCA.crt.pem";
 
 
-function connexionBDD()
+function connexionBDD($host, $username, $password, $database, $certificate)
 {
 	try
 	{
