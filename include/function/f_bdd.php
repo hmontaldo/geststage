@@ -12,7 +12,7 @@ function connexionBDD()
 	try
 	{
 		$db = mysqli_init();
-		mysqli_ssl_set($db,NULL,NULL, "../certificates/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
+		mysqli_ssl_set($db,NULL,NULL, "/geststage/include/certificates/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
 		mysqli_real_connect($db, $host, $username, $password, $database, 3306, MYSQLI_CLIENT_SSL);
 		
 	}
