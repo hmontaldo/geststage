@@ -1,11 +1,20 @@
 ﻿<?php
 
+// Paramètres de connexion
+$host = 'hen-bantko.mysql.database.azure.com';
+$username = 'henry_admin';
+$password = 'Simplon2024@';
+$database = 'bdd_geststage';
+
+
 function connexionBDD()
 {
 	try
 	{
-            $bdd = new PDO('mysql:host=servbd;port=3306;dbname=bdd_geststages;charset=utf8', 'usergs', 'mdpGS', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-            return $bdd;
+		$db = mysqli_init();
+		mysqli_ssl_set($db,NULL,NULL, "../certificates/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
+		mysqli_real_connect($db, $host, $username, $password, $database, 3306, MYSQLI_CLIENT_SSL);
+		
 	}
 	catch(Exception $e)
 	{
