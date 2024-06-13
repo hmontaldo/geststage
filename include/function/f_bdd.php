@@ -40,17 +40,17 @@ function connexionBDD($host, $username, $password, $database, $certificate)
 }
 
 // Test de la connexion
-$db = connexionBDD($host, $username, $password, $database, $certificate);
-if ($db === false) {
-    echo "La connexion à la base de données a échoué.";
-	if (file_exists($certificate)) {
-		$cert_content = file_get_contents($certificate);
-		echo "Contenu du certificat :\n" . $cert_content;
-	} else {
-		echo "Le certificat n'existe pas au chemin spécifié.";
-	}
-} else {
-    echo "Connexion réussie à la base de données.";
-}
+// $db = connexionBDD($host, $username, $password, $database, $certificate);
+// if ($db === false) {
+//     echo "La connexion à la base de données a échoué.";
+// 	if (file_exists($certificate)) {
+// 		$cert_content = file_get_contents($certificate);
+// 		echo "Contenu du certificat :\n" . $cert_content;
+// 	} else {
+// 		echo "Le certificat n'existe pas au chemin spécifié.";
+// 	}
+// } else {
+//     echo "Connexion réussie à la base de données.";
+// }
 
 ?>
