@@ -8,7 +8,7 @@ $database = 'bdd_geststages';
 $certificate = __DIR__ . "/../certificates/DigiCertGlobalRootCA.crt.pem";
 
 // Afficher le chemin du certificat pour vérification
-echo "Chemin du certificat : " . $certificate . "\n";
+// echo "Chemin du certificat : " . $certificate . "\n";
 
 // Lire et afficher le contenu du certificat
 /* if (file_exists($certificate)) {
