@@ -9,7 +9,7 @@ $database = 'bdd_geststages';
 // Utiliser __DIR__ pour construire le chemin absolu du certificat
 $certificate = __DIR__ . "/../certificates/DigiCertGlobalRootCA.crt.pem";
 
-/* // Afficher le chemin du certificat pour vérification
+ // Afficher le chemin du certificat pour vérification
 echo "Chemin du certificat : " . $certificate . "\n";
 
 // Lire et afficher le contenu du certificat
@@ -18,7 +18,7 @@ if (file_exists($certificate)) {
     echo "Contenu du certificat :\n" . $cert_content;
 } else {
     echo "Le certificat n'existe pas au chemin spécifié.\n";
-} */
+} 
 
 function connexionBDD($host, $username, $password, $database, $certificate)
 {
