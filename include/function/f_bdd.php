@@ -1,24 +1,24 @@
 ﻿<?php
 
 // Paramètres de connexion
-$host = 'hen-db-geststage.mysql.database.azure.com';
-$username = 'henry_admin';
+$host = 'bdd-geststages-anna.mysql.database.azure.com';
+$username = 'adarda';
 $password = 'Simplon2024@';
 $database = 'bdd_geststages';
 
 // Utiliser __DIR__ pour construire le chemin absolu du certificat
 $certificate = __DIR__ . "/../certificates/DigiCertGlobalRootCA.crt.pem";
 
-/*  // Afficher le chemin du certificat pour vérification
-echo "Chemin du certificat : " . $certificate . "\n"; */
+/*   // Afficher le chemin du certificat pour vérification
+echo "Chemin du certificat : " . $certificate . "\n"; 
 
-/* // Lire et afficher le contenu du certificat
+ // Lire et afficher le contenu du certificat
 if (file_exists($certificate)) {
     $cert_content = file_get_contents($certificate);
     echo "Contenu du certificat :\n" . $cert_content;
 } else {
     echo "Le certificat n'existe pas au chemin spécifié.\n";
-}  */
+}   */
 
 function connexionBDD($host, $username, $password, $database, $certificate)
 {
