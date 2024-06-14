@@ -26,8 +26,12 @@ function connexionBDD($host, $username, $password, $database, $certificate)
     {
         $db = mysqli_init();
         // Utiliser la variable $certificate correctement
-        mysqli_ssl_set($db, NULL, NULL, $certificate, NULL, NULL);
-		mysqli_real_connect($db, $host, $username, $password, $database, 3306, MYSQLI_CLIENT_SSL);
+        if(!mysqli_ssl_set($db, NULL, NULL, $certificate, NULL, NULL)) {
+			echo "certificate not found : " . $certificate;
+		}
+		if(!mysqli_real_connect($db, $host, $username, $password, $database, 3306, MYSQLI_CLIENT_SSL)) {
+			echo "connexion failededed : " . $db;
+		}
 		if (mysqli_connect_errno()) {
             die('Failed to connect to MySQL: '.mysqli_connect_error());
             }
