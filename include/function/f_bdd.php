@@ -1,9 +1,9 @@
 ﻿<?php
 
 // Paramètres de connexion
-$host = 'bdd-geststages-anna.mysql.database.azure.com';
-$username = 'adarda';
-$password = 'Simplon2024@';
+$host = 'hen-db-geststage.mysql.database.azure.com';
+$username = 'usergs';
+$password = 'mdpGS';
 $database = 'bdd_geststages';
 
 // Utiliser __DIR__ pour construire le chemin absolu du certificat
